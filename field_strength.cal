@@ -1,0 +1,630 @@
+#--------------------------------------------------------------------------------------------
+# A1 Section
+#--------------------------------------------------------------------------------------------
+# DC Gun
+GA1GHV01: voltage_scale = 1e3 [V/kV] #, peak_field_scale = 10 [MV/m/kV]
+
+# Solenoid Magnets
+MA1SLA01: field_scale = -8.351321e-3 [T/Amp], description = "Injector Emittance Compensation Solenoid Drawing No."
+MA1SLA02: field_scale = -8.351321e-3 [T/Amp], description = "Injector Emittance Compensation Solenoid Drawing No."
+
+# Buncher cavity
+#RFBDSP01: voltage_scale = 1e3 [V/kV]
+RA1CAV01: peak_field_scale = 1.5895e+04 [V/m/kV], voltage_scale = 1e3 [V/kV], DSP = "RFBDSP01"
+
+# Corrector Magnets
+MA1CHA01: field_scale = -6.8556e-5 [T*m/Amp], description = "Injector Hor. Corrector Drawing No."
+MA1CVA01: field_scale = -5.7538e-5 [T*m/Amp], description = "Injector Ver. Corrector Drawing No."
+
+MA1CHB01: field_scale = -1.7192e-4 [T*m/Amp], description = "Injector Hor. Corrector Drawing No."
+MA1CVB01: field_scale = -1.8735e-4 [T*m/Amp], description = "Injector Ver. Corrector Drawing No."
+
+MA1CHB02: field_scale = -1.7192e-4 [T*m/Amp], description = "Injector Hor. Corrector Drawing No."
+MA1CVB02: field_scale = -1.8735e-4 [T*m/Amp], description = "Injector Ver. Corrector Drawing No."
+
+
+#--------------------------------------------------------------------------------------------
+# A2 Section
+#--------------------------------------------------------------------------------------------
+#RF1DSP01: peak_field_scale = 17.64e-3  [V/m/kV], voltage_scale = 1e3 [V/kV]
+#RF2DSP01: peak_field_scale = 17.585e-3 [V/m/kV], voltage_scale = 1e3 [V/kV]
+#RF3DSP01: peak_field_scale = 17.64e-3  [V/m/kV], voltage_scale = 1e3 [V/kV] 
+#RF4DSP01: peak_field_scale = 17.585e-3 [V/m/kV], voltage_scale = 1e3 [V/kV]
+#RF5DSP01: peak_field_scale = 17.64e-3  [V/m/kV], voltage_scale = 1e3 [V/kV]
+
+RA2CAV01: peak_field_scale = 8.5428e+03  [V/m/kV], voltage_scale = 1e3 [V/kV], DSP = "RF1DSP01"
+RA2CAV02: peak_field_scale = 8.5428e+03  [V/m/kV], voltage_scale = 1e3 [V/kV], DSP = "RF2DSP01"
+RA2CAV03: peak_field_scale = 8.5428e+03  [V/m/kV], voltage_scale = 1e3 [V/kV], DSP = "RF3DSP01"
+RA2CAV04: peak_field_scale = 8.5428e+03  [V/m/kV], voltage_scale = 1e3 [V/kV], DSP = "RF4DSP01"
+RA2CAV05: peak_field_scale = 8.5428e+03  [V/m/kV], voltage_scale = 1e3 [V/kV], DSP = "RF5DSP01"
+
+# Corrector Magnets
+MA2CHC01: field_scale = -8.327e-5 [T*m/Amp]
+MA2CVC01: field_scale = -9.335e-5 [T*m/Amp]
+
+
+#--------------------------------------------------------------------------------------------
+# A3 Section
+#--------------------------------------------------------------------------------------------
+# Quads: field gradient integral is -0.00375 T/Amp, hard coded L = 0.2 m, original MA3QUA03: field_scale = -0.01675 [T/m/Amp]
+MA3QUA01: field_scale = -0.014 [T/m/Amp]
+MA3QUA02: field_scale = -0.014 [T/m/Amp] 
+MA3QUA03: field_scale = -0.014 [T/m/Amp]
+MA3QUA04: field_scale = -0.014 [T/m/Amp] 
+
+# Corrector Magnets
+MA3CHD01: field_scale = -0.000240 [T*m/Amp]
+MA3CVD01: field_scale = -0.000246 [T*m/Amp]
+
+MA3CHD02: field_scale = -0.000240 [T*m/Amp]
+MA3CVD02: field_scale = -0.000246 [T*m/Amp]
+
+MA3CHD03: field_scale = -0.000240 [T*m/Amp]
+MA3CVD03: field_scale = -0.000246 [T*m/Amp]
+
+MA3CHD04: field_scale = -0.000240 [T*m/Amp]
+MA3CVD04: field_scale = -0.000246 [T*m/Amp]
+
+# Dipoles
+MA3DPA01: momentum_scale = 4.5348 [MeV/Amp], field_scale = 0.01 [T*m/Amp]
+
+
+#--------------------------------------------------------------------------------------------
+# B1 Merger
+#--------------------------------------------------------------------------------------------
+# Quads: field gradint integral = -0.00178 T/Amp, L = 0.15 m
+MB1QUB01: field_scale = -0.0117880794702 [T/m/Amp]
+MB1QUB02: field_scale = -0.0117880794702 [T/m/Amp]
+
+# Corrector Magnets
+MB1CHG01: field_scale = -3.100e-4 [T*m/Amp] # Old value: +0.000124
+MB1CVG01: field_scale = -3.175e-4 [T*m/Amp] # Old value: -0.000127
+
+MB1CHG02: field_scale = -3.1e-4 [T*m/Amp]
+MB1CVG02: field_scale = -3.175e-4 [T*m/Amp]
+
+MB1CHT01: field_scale = +0.000220 [T*m/Amp]
+MB1CVT01: field_scale = -0.000200 [T*m/Amp]
+
+MB1CHE01: field_scale = -5.2e-3 [T*m/Amp], description = "B1 Merger Dipole 1 Trim"
+MB1CHE02: field_scale = -5.2e-3 [T*m/Amp], description = "B1 Merger Dipole 2 Trim"
+
+# Dipoles
+MB1DPA01: momentum_scale = 4.5348 [MeV/Amp], field_scale = 0.01 [T*m/Amp]
+
+
+#--------------------------------------------------------------------------------------------
+# B2 Merger
+#--------------------------------------------------------------------------------------------
+# Quads: field gradint integral = -0.00178 T/Amp, L = 0.15 m
+MB2QUB01: field_scale = -0.0117880794702 [T/m/Amp]
+MB2QUB02: field_scale = -0.0117880794702 [T/m/Amp]
+
+# Dipoles
+MB2DPA01: momentum_scale = 4.5348 [MeV/Amp], field_scale = -0.01 [T*m/Amp]
+
+# Correctors
+MB2CHG01: field_scale = +0.000124 [T*m/Amp]
+MB2CVG01: field_scale = -0.000127 [T*m/Amp]
+
+MB2CHG02: field_scale = +0.000124 [T*m/Amp]
+MB2CVG02: field_scale = -0.000127 [T*m/Amp]
+
+MB2CHT01: field_scale = +0.000220 [T*m/Amp]
+MB2CVT01: field_scale = -0.000200 [T*m/Amp]
+
+#MB2CHS01A: field_scale = -2.1e-4 [T*m/Amp]
+#MB2CVS01A: field_scale = -1.73e-4 [T*m/Amp]
+
+#MB2CHS01B: field_scale = 2.28e-4 [T*m/Amp]
+#MB2CVS01B: field_scale = 1.60e-4 [T*m/Amp]
+
+#MB2CHS02A: field_scale = -2.1e-4 [T*m/Amp]
+#MB2CVS02A: field_scale = -1.76e-4 [T*m/Amp]
+
+#MB2CHS02B: field_scale = 2.23e-4 [T*m/Amp]
+#MB2CVS02B: field_scale = 1.65e-4 [T*m/Amp]
+
+
+#--------------------------------------------------------------------------------------------
+# D1
+#--------------------------------------------------------------------------------------------
+RD1CAV01: voltage_scale = 1e3 [V/kV], peak_field_scale = 1  [V/m/kV]
+RD1CAV02: peak_field_scale = 1  [V/m/kV], voltage_scale = 1e3 [V/kV]
+RD1CAV03: peak_field_scale = 1  [V/m/kV], voltage_scale = 1e3 [V/kV]
+RD1CAV04: peak_field_scale = 1  [V/m/kV], voltage_scale = 1e3 [V/kV]
+RD1CAV05: peak_field_scale = 1  [V/m/kV], voltage_scale = 1e3 [V/kV] 
+RD1CAV06: peak_field_scale = 1  [V/m/kV], voltage_scale = 1e3 [V/kV]
+
+MD1DIP01: field_scale = 4.07220e-2 [T/Amp], description="H-dip-4"
+
+#--------------------------------------------------------------------------------------------
+# D2
+#--------------------------------------------------------------------------------------------
+
+MD2DIP01: momentum_scale = 4.5348 [MeV/Amp], field_scale = 0.01 [T/Amp]
+MD2QUA02: field_scale = -0.5415 [T/m/Amp]
+MD2QUA03: field_scale = -0.5415 [T/m/Amp]
+MD2QUA04: field_scale = 0.5415 [T/m/Amp]
+MD2QUA05: field_scale = -0.5415 [T/m/Amp]
+MD2QUA06: field_scale = -0.5415 [T/m/Amp]
+MD2QUA07: field_scale = 0.5415 [T/m/Amp]
+MD2QUA08: field_scale = -0.5415 [T/m/Amp]
+
+#--------------------------------------------------------------------------------------------
+# S1 Splitter Line
+#--------------------------------------------------------------------------------------------
+# FAT Specific:
+#MS1DPB01: field_scale = -1.593e-3 [T/Amp] #-0.00162638522 [T/Amp], description="BNL ERL dipole"
+#MS1DPB08: field_scale = -1.593e-3 [T/Amp] #-0.00162638522 [T/Amp], description="BNL ERL dipole"
+
+#MS1DH401: field_scale = 0.02360655737 [T/Amp], description="H4 air cooled"  # Will need to check naming 4/2/18
+#MS1DH402: field_scale = 0.02360655737 [T/Amp], description="H4 air cooled"
+
+# Nominal
+MS1DIP01: field_scale = -0.00349 [T/Amp], description="H-common"  
+MS1DIP02: field_scale = 3.147e-3 [T/Amp] #  3.489666e-3 [T/Amp], description="H-dip-1"
+MS1DIP03: field_scale = -3.147e-3 [T/Amp] # -3.489666e-3 [T/Amp], description="H-dip-1"
+MS1DIP04: field_scale = 3.147e-3  [T/Amp] # 3.489666e-3 [T/Amp], description="H-dip-1"
+MS1DIP05: field_scale = 3.147e-3 [T/Amp] # 3.489666e-3 [T/Amp], description="H-dip-1"
+MS1DIP06: field_scale = -3.147e-3 [T/Amp] # -3.489666e-3 [T/Amp], description="H-dip-1"
+MS1DIP07: field_scale = 3.147e-3 [T/Amp] # 0.00349 [T/Amp], description="H-common"  
+MS1DIP08: field_scale = -0.00349 [T/Amp], description="H-common"  
+
+MS1TRM05: field_scale = -0.00114096153 [T/amp], description = "MS1DIP05 Trim"
+MS1TRM06: field_scale = -0.00114096153 [T/amp], description = "MS1DIP05 Trim"
+
+# QUAD SIGNS LATTICE DEPENDENT (THE WIRING IS RELATED TO THE LATTICE DESIGN)
+MS1QUA01: field_scale = -0.39904 [T/m/Amp] # 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS1QUA02: field_scale = -0.39904 [T/m/Amp] # 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS1QUA03: field_scale = +0.39904 [T/m/Amp] # -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS1QUA04: field_scale = -0.39904 [T/m/Amp] # 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS1QUA05: field_scale = -0.39904 [T/m/Amp] # 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS1QUA06: field_scale = +0.39904 [T/m/Amp] # -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS1QUA07: field_scale = -0.39904 [T/m/Amp] # 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS1QUA08: field_scale = -0.39904 [T/m/Amp] # 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+
+MS1CRV01: field_scale = -0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+MS1CRV02: field_scale = -0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+MS1CRV03: field_scale = -0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+MS1CRV04: field_scale = -0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+
+#--------------------------------------------------------------------------------------------
+# S2 Splitter Line
+#--------------------------------------------------------------------------------------------
+MS2DIP01: field_scale = -6.87089e-4 [T/Amp], description="Septum 1"
+MS2DIP02: field_scale = -4.07220e-2 [T/Amp], description="H-dip-4"
+MS2DIP03: field_scale = -3.489666e-3 [T/Amp], description="H-dip-1"
+MS2DIP04: field_scale = -3.259e-3 [T/Amp], description="SX/RX H-dip-2"
+MS2DIP05: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+MS2DIP06: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+MS2DIP07: field_scale = -3.259e-3 [T/Amp], description="SX/RX H-dip-2"
+MS2DIP08: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+MS2DIP09: field_scale = -4.07220e-2 [T/Amp], description="H-dip-4"
+MS2DIP10: field_scale = -6.87089e-4 [T/Amp], description="Septum 1"
+
+MS2QUA01: field_scale = 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS2QUA02: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS2QUA03: field_scale = 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS2QUA04: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS2QUA05: field_scale = 5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W" 
+MS2QUA06: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS2QUA07: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS2QUA08: field_scale = 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+
+MS2CRV01: field_scale = 0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+MS2CRV02: field_scale = 0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+MS2CRV03: field_scale = 0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+MS2CRV04: field_scale = 0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+
+#--------------------------------------------------------------------------------------------
+# S3 Splitter Line
+#--------------------------------------------------------------------------------------------
+MS3DIP01: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+MS3DIP02: field_scale = -3.375e-3 [T/Amp], description="SX/RX H-dip-3"
+MS3DIP03: field_scale = -3.375e-3 [T/Amp], description="SX/RX H-dip-3"
+MS3DIP04: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+
+MS3QUA01: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS3QUA02: field_scale = 5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MS3QUA03: field_scale = -5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MS3QUA04: field_scale = 5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MS3QUA05: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS3QUA06: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS3QUA07: field_scale = 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS3QUA08: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+
+MS3CRV01: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+MS3CRV02: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+MS3CRV03: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+MS3CRV04: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+
+#--------------------------------------------------------------------------------------------
+# S4 Splitter Line
+#--------------------------------------------------------------------------------------------
+MS4DIP01: field_scale = 4.533e-3 [T/Amp], description="Septum 2"
+MS4DIP02: field_scale = 3.291e-3 [T/Amp], description="SX/RX H-dip-5"
+MS4DIP03: field_scale = -3.375e-3 [T/Amp], description="SX/RX H-dip-3"
+MS4DIP04: field_scale = -3.375e-3 [T/Amp], description="SX/RX H-dip-3"
+MS4DIP05: field_scale = 3.291e-3 [T/Amp], description="SX/RX H-dip-5"
+MS4DIP06: field_scale = 4.533e-3 [T/Amp], description="Septum 2"
+
+MS4QUA01: field_scale = -5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MS4QUA02: field_scale = 5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MS4QUA03: field_scale = -5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MS4QUA04: field_scale = -1.227e-1 [T/m/Amp], description="SX/RX Quad-2-W"  
+MS4QUA05: field_scale = 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MS4QUA06: field_scale = -5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MS4QUA07: field_scale = 5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MS4QUA08: field_scale = -5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+
+MS4CRV01: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+MS4CRV02: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+MS4CRV03: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+MS4CRV04: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+
+
+#--------------------------------------------------------------------------------------------
+# R1 Splitter Line
+#--------------------------------------------------------------------------------------------
+# Nominal
+MR1DIP01: field_scale = -0.00349 [T/Amp], description="H-common"  
+MR1DIP02: field_scale = 3.147e-3 [T/Amp] #  3.489666e-3 [T/Amp], description="H-dip-1"
+MR1DIP03: field_scale = -3.147e-3 [T/Amp] # -3.489666e-3 [T/Amp], description="H-dip-1"
+MR1DIP04: field_scale = 3.147e-3  [T/Amp] # 3.489666e-3 [T/Amp], description="H-dip-1"
+MR1DIP05: field_scale = 3.147e-3 [T/Amp] # 3.489666e-3 [T/Amp], description="H-dip-1"
+MR1DIP06: field_scale = -3.147e-3 [T/Amp] # -3.489666e-3 [T/Amp], description="H-dip-1"
+MR1DIP07: field_scale = 3.147e-3 [T/Amp] # 0.00349 [T/Amp], description="H-common"  
+MR1DIP08: field_scale = -0.00349 [T/Amp], description="H-common"  
+
+#MR1DIP01: field_scale = -3.489666e-3 [T/Amp], description="H-dip-1"
+#MR1DIP02: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+#MR1DIP03: field_scale = -3.489666e-3 [T/Amp], description="H-dip-1"
+#MR1DIP04: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+#MR1DIP05: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+#MR1DIP06: field_scale = -3.489666e-3 [T/Amp], description="H-dip-1"
+#MR1DIP07: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+#MR1DIP08: field_scale = -3.489666e-3 [T/Amp], description="H-dip-1"
+
+# QUAD SIGNS LATTICE DEPENDENT (THE WIRING IS RELATED TO THE LATTICE DESIGN)
+MR1QUA01: field_scale = -0.39904 [T/m/Amp] # +0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR1QUA02: field_scale = -0.39904 [T/m/Amp] # +0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR1QUA03: field_scale = -0.39904 [T/m/Amp] # -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR1QUA04: field_scale = -0.39904 [T/m/Amp] # +0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR1QUA05: field_scale = -0.39904 [T/m/Amp] # +0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR1QUA06: field_scale = +0.39904 [T/m/Amp] # -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR1QUA07: field_scale = -0.39904 [T/m/Amp] # +0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR1QUA08: field_scale = +0.39904 [T/m/Amp] # +0.4032258 [T/m/Amp], description="SX/RX Quad-1-A" 
+
+MR1CRV01: field_scale = 0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+MR1CRV02: field_scale = 0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+MR1CRV03: field_scale = 0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+MR1CRV04: field_scale = 0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+
+MR1DIP99: field_scale = 4.0722e-2 [T*m/Amp], description = "H-dip-4"
+
+
+#--------------------------------------------------------------------------------------------
+# R2 Splitter Line
+#--------------------------------------------------------------------------------------------
+MR2DIP01: field_scale = -6.87089e-4 [T/Amp], description="Septum 1"
+MR2DIP02: field_scale = -4.0722e-2 [T/Amp], description="H-dip-4"
+MR2DIP03: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+MR2DIP04: field_scale = -3.259e-3 [T/Amp], description="SX/RX H-dip-2"
+MR2DIP05: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+MR2DIP06: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+MR2DIP07: field_scale = -3.259e-3 [T/Amp], description="SX/RX H-dip-2"
+MR2DIP08: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+MR2DIP09: field_scale = -4.0722e-2 [T/Amp], description="H-dip-4"
+MR2DIP10: field_scale = -6.87089e-4 [T/Amp], description="Septum 1"
+
+MR2QUA01: field_scale = 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR2QUA02: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR2QUA03: field_scale = 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR2QUA04: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR2QUA05: field_scale = 5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MR2QUA06: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR2QUA07: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR2QUA08: field_scale = 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+
+MR2CRV01: field_scale = 0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+MR2CRV02: field_scale = 0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+MR2CRV03: field_scale = 0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+MR2CRV04: field_scale = 0.000405405 [T*m/Amp], description = "SX/RX vertical corrector Type 2"
+
+
+#--------------------------------------------------------------------------------------------
+# R3 Splitter Line
+#--------------------------------------------------------------------------------------------
+MR3DIP01: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+MR3DIP02: field_scale = -3.375e-3 [T/Amp], description="SX/RX H-dip-3"
+MR3DIP03: field_scale = -3.375e-3 [T/Amp], description="SX/RX H-dip-3"
+MR3DIP04: field_scale = 3.489666e-3 [T/Amp], description="H-dip-1"
+
+MR3QUA01: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR3QUA02: field_scale = 5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MR3QUA03: field_scale = -5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MR3QUA04: field_scale = 5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MR3QUA05: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR3QUA06: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR3QUA07: field_scale = 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR3QUA08: field_scale = -0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+
+MR3CRV01: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+MR3CRV02: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+MR3CRV03: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+MR3CRV04: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+
+
+#--------------------------------------------------------------------------------------------
+# R4 Splitter Line
+#--------------------------------------------------------------------------------------------
+MR4DIP01: field_scale = 4.533e-3 [T/Amp], description="Septum 2"
+MR4DIP02: field_scale = 3.291e-3 [T/Amp], description="SX/RX H-dip-5"
+MR4DIP03: field_scale = -3.375e-3 [T/Amp], description="SX/RX H-dip-3"
+MR4DIP04: field_scale = -3.375e-3 [T/Amp], description="SX/RX H-dip-3"
+MR4DIP05: field_scale = 3.291e-3 [T/Amp], description="SX/RX H-dip-5"
+MR4DIP06: field_scale = 4.533e-3 [T/Amp], description="Septum 2"
+
+MR4QUA01: field_scale = 5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MR4QUA02: field_scale = 5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MR4QUA03: field_scale = -5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MR4QUA04: field_scale = -1.227e-1 [T/m/Amp], description="SX/RX Quad-2-W"  
+MR4QUA05: field_scale = 0.4032258 [T/m/Amp], description="SX/RX Quad-1-A"  
+MR4QUA06: field_scale = -5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MR4QUA07: field_scale = 5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+MR4QUA08: field_scale = -5.389e-2 [T/m/Amp], description="SX/RX Quad-1-W"  
+
+MR4CRV01: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+MR4CRV02: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+MR4CRV03: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+MR4CRV04: field_scale = 0.000622222 [T*m/Amp], description = "SX/RX vertical corrector Type 1"
+
+
+#********************************************************************************************************
+#********************************************************************************************************
+#                                           RETURN LOOP
+#********************************************************************************************************
+#********************************************************************************************************
+#=================================================================================
+# FA (16 cells)
+#=================================================================================
+MFAQUF01_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF02_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF03_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF04_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF05_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF06_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF07_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF08_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF09_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF10_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF11_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF12_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF13_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF14_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF15_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFAQUF16_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+
+MFAQUD01_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD02_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD03_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD04_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD05_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD06_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD07_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD08_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD09_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD10_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD11_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD12_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD13_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD14_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD15_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFAQUD16_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+
+#=================================================================================
+# TA (24 cells)
+#=================================================================================
+MTAQUF01_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF02_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF03_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF04_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF05_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF06_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF07_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF08_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF09_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF10_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF11_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF12_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF13_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF14_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF15_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF16_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF17_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF18_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF19_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF20_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF21_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF22_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF23_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTAQUF24_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+
+MTAQUD01_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD02_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD03_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD04_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD05_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD06_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD07_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD08_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD09_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD10_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD11_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD12_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD13_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD14_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD15_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD16_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD17_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD18_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD19_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD20_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD21_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD22_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD23_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTAQUD24_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+
+
+#=================================================================================
+# ZX (24 cells)
+#=================================================================================
+MZXQUF01_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF02_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF03_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF04_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF05_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF06_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF07_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF08_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF09_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF10_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF11_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF12_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF13_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF14_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF15_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF16_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF17_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF18_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF19_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF20_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF21_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF22_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF23_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF24_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF25_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF26_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MZXQUF27_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+
+MZXQUD01_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD02_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD03_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD04_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD05_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD06_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD07_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD08_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD09_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD10_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD11_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD12_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD13_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD14_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD15_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD16_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD17_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD18_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD19_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD20_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD21_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD22_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD23_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD24_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD25_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD26_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MZXQUD27_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+
+
+#=================================================================================
+# TB (24 cells)
+#=================================================================================
+MTBQUF01_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF02_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF03_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF04_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF05_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF06_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF07_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF08_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF09_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF10_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF11_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF12_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF13_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF14_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF15_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF16_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF17_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF18_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF19_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF20_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF21_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF22_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF23_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MTBQUF24_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+
+MTBQUD01_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD02_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD03_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD04_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD05_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD06_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD07_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD08_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD09_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD10_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD11_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD12_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD13_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD14_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD15_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD16_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD17_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD18_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD19_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD20_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD21_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD22_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD23_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MTBQUD24_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+
+#=================================================================================
+# FB (16 cells)
+#=================================================================================
+MFBQUF01_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF02_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF03_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF04_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF05_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF06_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF07_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF08_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF09_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF10_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF11_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF12_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF13_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF14_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF15_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+MFBQUF16_H: field_scale = -1.24e-3 [T*m/Amp], description = "FA horizontal corrector"   
+
+MFBQUD01_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD02_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD03_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD04_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD05_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD06_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD07_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD08_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD09_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD10_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD11_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD12_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD13_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD14_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD15_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+MFBQUD16_V: field_scale = -1.24e-3 [T*m/Amp], description = "FA vertical corrector"   
+
+
